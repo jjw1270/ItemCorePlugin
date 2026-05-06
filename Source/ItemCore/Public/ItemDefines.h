@@ -11,7 +11,7 @@ enum class EItemType : uint8
 {
 	NA = 0								UMETA(Hidden),
 
-	Story								UMETA(ToolTip = "스토리"),
+	Story								UMETA(ToolTip = "[Sample] 스토리"),
 
 	MAX								UMETA(Hidden)
 };

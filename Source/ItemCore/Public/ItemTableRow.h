@@ -30,7 +30,15 @@ public:
 	FText DisplayName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	FText Description;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	EItemDevelopmentState DevState = EItemDevelopmentState::NotUsed;
+
+#if WITH_EDITORONLY_DATA
+	UPROPERTY(EditAnywhere, meta = (MultiLine = true))
+	FText DevComment;
+#endif
 
 public:
 	FItemTableRow()
